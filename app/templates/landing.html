@@ -1,0 +1,8 @@
+<h1>Todos</h1>
+
+<input type="text" name="" ng-model='this.newTodoTitle'>
+<button ng-click='landing.addToDo(this.newTodoTitle)'>Add Todo</button>
+
+<ul ng-repeat='todo in landing.toDos'>
+  <li>{{ todo.title }} | {{ todo.done }}</li>
+</ul>
